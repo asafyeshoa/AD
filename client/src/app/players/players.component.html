@@ -1,0 +1,23 @@
+
+<style>
+
+.players-container {
+  margin-top: 100px;
+  height: 80vh;
+  min-width: 80%;
+  border: #333333 solid 1px;
+}
+
+
+
+</style>
+
+<div class="players-container">
+
+<div class="row">
+  <div class="players" *ngFor="let player of players$ | async" >
+    <p>{{player}}</p>
+
+  </div>
+</div>
+</div>

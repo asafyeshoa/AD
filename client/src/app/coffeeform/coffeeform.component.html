@@ -1,0 +1,36 @@
+<style>
+
+  .form-container {
+    margin-top: 100px;
+    border: #333333 solid 1px;
+    width: 30%;
+    height: 300px;
+    padding: 15px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+</style>
+
+<div class="form-container" >
+<form>
+  <h3>Order coffee:</h3>
+  <p>Enter your name:</p>
+  <input type="text"/>
+
+  <p>Please enter the time you will need coffee? (in minutes)</p>
+  <input type="text" [defaultValue]="3" />
+  <button type="submit">Submit</button>
+</form>
+</div>
